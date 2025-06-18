@@ -1,0 +1,104 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #80cdce;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-logo {
+  height: 40px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-user {
+  position: relative;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.topbar-avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.topbar-dropdown {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  min-width: 75px;
+  text-align: right;
+}
+
+.topbar-dropdown button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+}
+
+/* Hamburger icon (hidden by default) */
+.hamburger-icon {
+  display: none;
+  font-size: 20px;
+  color: #333;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+/* Mobile dropdown menu */
+.mobile-menu-dropdown {
+  position: absolute;
+  top: 58px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.mobile-menu-dropdown button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+}
+
+
+
+/* Responsive Rules */
+@media (max-width: 768px) {
+  .topbar-user {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+}

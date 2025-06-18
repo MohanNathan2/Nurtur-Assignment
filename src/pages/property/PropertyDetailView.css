@@ -1,0 +1,272 @@
+.property-detail-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Back Button */
+.back-button {
+  background: none;
+  border: 1px solid #444;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* Layout Columns */
+.property-detail-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  flex: 2;
+  min-width: 600px;
+}
+
+.right-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Image Section */
+.property-media-vertical {
+  flex: 2;
+  min-width: 600px;
+}
+
+.main-image-top {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  height: 400px;
+}
+
+.gallery-row-bottom {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-thumb-bottom {
+  flex: 1;
+  border-radius: 6px;
+  object-fit: cover;
+  max-height: 200px;
+  width: 100%;
+}
+
+/* Price Header & Icons */
+.price-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.price-heading span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+  margin-left: 0.5rem;
+}
+
+.icon-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.share-icon,
+.heart-icon {
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Sub Title & Contact */
+.sub-title {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem 0 1rem;
+}
+
+.contact-note {
+  color: #e67e22;
+  margin: 1rem 0;
+}
+
+.contact-agent-btn {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Divider */
+.divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+
+/* Facts Section */
+.facts-section {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.facts-title {
+  font-size: 1rem;
+  color: #333;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.facts-table {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.fact-row {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  margin: 0.4rem 0;
+}
+
+.fact-label {
+  font-weight: 600;
+  min-width: 140px;
+  color: #111;
+}
+
+.fact-value {
+  color: #111;
+}
+
+.fact-link {
+  color: #555;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.facts-description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+/* Agent Card */
+.agent-card {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.agent-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.agent-info p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.agent-name {
+  font-weight: bold;
+  color: #111;
+}
+
+.agent-role {
+  color: #777;
+}
+
+.agent-contact {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Map Placeholder */
+.map-placeholder {
+  background: #f1f1f1;
+  height: 150px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  border-radius: 6px;
+}
+
+
+@media (max-width: 768px) {
+  .property-detail-grid {
+    flex-direction: column;
+  }
+
+  .property-media-vertical,
+  .left-column,
+  .right-column {
+    min-width: 100% !important;
+    flex: 1 1 100%;
+  }
+
+  .main-image-top {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .gallery-row-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery-thumb-bottom {
+    max-height: none;
+    height: auto;
+    width: 100%;
+  }
+
+  .price-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .contact-agent-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .agent-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .agent-photo {
+    margin-bottom: 1rem;
+  }
+
+  .map-placeholder {
+    height: 200px;
+  }
+}
